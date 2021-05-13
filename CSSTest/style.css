@@ -1,0 +1,52 @@
+* {
+    font-family: fantasy;
+}
+
+h2,p,a {
+    text-align: center;
+}
+
+.boxes {
+    margin: 20px 40px 60px 80px;
+    padding: 25px 50px 75px 100px;
+    border: solid lightblue;
+    border-radius: 25px;
+    width: 30em;
+    display: block
+}
+
+.larger {
+    font-size: xx-large;
+}
+
+.smaller {
+    font-size: xx-small
+}
+
+.linkcenter {
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: red;
+}
+
+a:hover {
+    color: lightblue;
+}
+
+.box1 {
+    background-color: lightgoldenrodyellow;
+}
+
+.box2 {
+    background-color: lightpink;
+    position: relative;
+    left: 30px;
+    bottom: 10px;
+    
+}
