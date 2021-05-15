@@ -1,0 +1,20 @@
+body {
+    background-color: azure;
+    text-align: center;
+    font-family: cursive;
+}
+
+h1 {
+    color: lightcoral
+}
+
+h3 {
+    text-transform: uppercase;
+}
+
+.friend {
+    background-color: lavenderblush;
+    border-radius: 35px;
+    padding: 30px 25px;
+    margin: 30px 30px 30px 30px
+}
