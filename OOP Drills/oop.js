@@ -67,36 +67,54 @@
 // p1.sayHello();
 
 // Inheritance
+
+
 class Vehicle {
     constructor(manufacturer, wheels) {
         this.manufacturer = manufacturer;
         this.wheels = wheels;
-
     }
     aboutVehicle() {
-        console.log(`The car is a hatchback from ${this.manufacturer} with ${this.wheels}.`)
+        console.log(`This car is made by ${this.manufacturer} and has ${this.wheels} wheels.`)
     }
 }
 
-
-class Trucks extends Vehicle {
+class Truck extends Vehicle {
     constructor(manufacturer, wheels, doors) {
         super(manufacturer, wheels);
+        this.doors = doors;
     }
-    doors () {
-        console.log('There is a door')
+    aboutVehicle() {
+        console.log(`This car is made by ${this.manufacturer} and has ${this.wheels} wheels. Doors: ${this.doors}`)
     }
 }
 
+class Sedan extends Vehicle {
+    constructor(manufacturer, wheels, size, mpg){
+        super(manufacturer,wheels);
+            this.size = size;
+            this.mpg = mpg;
+    }
+    aboutVehicle() {
+        console.log(`This ${this.size} car is made by ${this.manufacturer} and has ${this.wheels} wheels. It's great for it's ${this.mpg} mpg.`)
+    }
+}
 
-// class Sedan extends Vehicle {
-//     size: 
-//     mpg;
-// }
+class Motorcycles extends Vehicle {
+    constructor(manufacturer, wheels, doors, handlebars){
+        super(manufacturer,wheels)
+            this.doors = doors;
+            this.handlebars = handlebars;
+    }
+    aboutVehicle() {
+        console.log(`This motorcycle is made by ${this.manufacturer} and has ${this.wheels} wheels. Doors: ${this.doors}, Handlebars: ${this.handlebars}`)
+    }
+}
 
-// class Motorcycles extends Vehicle {
-//     handles: true;
-//     door = false;
-// }
+let s1 = new Sedan('Toyota', 4, 'small', '25');
+console.log(s1)
+s1.aboutVehicle();
 
-
+let m1 = new Motorcycles('Harley', 2, false, true);
+console.log(m1);
+m1.aboutVehicle();
